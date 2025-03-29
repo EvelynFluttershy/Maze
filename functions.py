@@ -1,3 +1,6 @@
+"""
+Marleen & Evelyn
+"""
 import os # bibliotek för systemfunktioner
 import msvcrt # bibliotek för Microsoft-funktioner
 def clear(): # funktion som tömmer terminalen från all text

@@ -1,3 +1,6 @@
+"""
+Marleen & Evelyn
+"""
 class Item: # klass för alla saker i spelet
 	def __init__(self, x, y, type, subtype):
 		self.x = x
