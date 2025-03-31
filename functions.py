@@ -36,12 +36,12 @@ def print_map(player, terrain, pickup): # funktion som ritar ut hela spelplanen 
 	for t in terrain:
 		tx = t.get_x() - x + C #
 		ty = t.get_y() - y + C
-		if tx> = 0 and tx< W and ty> = 0 and ty< W:
+		if tx >= 0 and tx < W and ty >= 0 and ty < W:
 			xy(map, tx, ty, t.get_emoji())
 	for t in pickup:
 		tx = t.get_x() - x + C #
 		ty = t.get_y() - y + C
-		if tx> = 0 and tx< W and ty> = 0 and ty< W:
+		if tx >= 0 and tx < W and ty >= 0 and ty < W:
 			xy(map, tx, ty, t.get_emoji())
 	map[C][C] = "🔴"
 

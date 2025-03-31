@@ -54,21 +54,21 @@ class Player(Item): # spelaren
 			if t.get_x() == target_x and t.get_y() == target_y:
 				target = t
 		if target == None:
-			self.x + = x
-			self.y + = y
+			self.x += x
+			self.y += y
 		elif target.get_type() == "pickup":
-			self.x + = x
-			self.y + = y
-			self.gold + = target.get_gold()
+			self.x += x
+			self.y += y
+			self.gold += target.get_gold()
 			target.delete()
 
 class Terrain(Item): # objekt i världen
 	def __init__(self, x, y, subtype):
-		super().__init__(x, y, "terrain", subtype ) 
+		super().__init__(x, y, "terrain", subtype) 
 
 class Pickup(Item): # objekt man kan plocka upp
 	def __init__(self, x, y, subtype, gold):
-		super().__init__(x, y, "pickup", subtype )
+		super().__init__(x, y, "pickup", subtype)
 		self.gold = gold
 	def get_gold(self):
 		return self.gold
